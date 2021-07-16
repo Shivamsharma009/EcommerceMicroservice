@@ -1,0 +1,23 @@
+{
+  "name": "EcommerceMicroservice",
+  "version": "1.0.0",
+  "description": "In this Project I complete build Ecommerce Microservice Application which \r    contain three service",
+  "main": "isAuthenticated.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shivamsharma009/EcommerceMicroservice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shivamsharma009/EcommerceMicroservice/issues"
+  },
+  "homepage": "https://github.com/Shivamsharma009/EcommerceMicroservice#readme",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1"
+  }
+}
