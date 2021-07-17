@@ -34,6 +34,25 @@ async function connect() {
 
 connect();
 
+app.post("/product/buy", isAuthenticated , async (req,res) => {
+    const {ids} = req.body;
+    const products = await Product.find({_id : {$in: ids}});
+    channel.sendToQueue(
+        "ORDER",
+        Buffer.from(
+            JSON.stringify({
+                products,
+                userEmail: req.user.email,
+            })
+        )
+    );
+    channel.consume("PRODUCT", (data) => {
+        console.log("Consuming Product Queue");
+        order = JSON.parse(data.content);
+    });
+    return res.json(order);
+})
+
 
 
 //Create
