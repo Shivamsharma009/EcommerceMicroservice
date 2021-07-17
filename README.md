@@ -8,4 +8,4 @@
    3. Authentication Service 
 
    So this is a Complete Microservice Application Which i implemented in Node , Express js and as a DataBase I used
-   MONGODB(Atlas) and I am using RabbitMQ as a Queue Service.
+   MONGODB(Atlas) and I am using RabbitMQ as a Queue Service. For Running RabbitMQ instance i used docker Spinner Configuration.
